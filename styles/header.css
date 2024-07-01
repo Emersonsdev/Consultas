@@ -1,0 +1,28 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    padding: 1.375rem 0rem;
+    gap: 1rem;
+}
+
+.cabecalho__foto {
+    width: 57px;
+    border-radius: 50%;
+}
+
+.cabecalho__textos__nome {
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.cabecalho__textos__consultas {
+    font-size: 0.875rem;
+    color: var(--cinza-claro);
+}
+
+
+@media (max-width: 1000px) {
+    .cabecalho__menu{
+        display: none;
+    }
+}

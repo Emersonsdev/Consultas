@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="assets/perfil-1.png" alt="foto da médica" class="cabecalho__foto"/>
+        <div class="cabecalho__textos">            
+            <h1 class="cabecalho__textos__nome">Olá, Sônia</h1>
+            <p class="cabecalho__textos__consultas">Mais 4 consultas hoje</p>
+        </div>
+    </header>
+    
+    <section class="consultas">
+        <h3 class="consultas__data">Hoje</h3>
+        <div class="consultas__card">
+            <div class="consultas__card__paciente">
+                <img class="consultas__card__paciente__foto" src="assets/perfil-2.png" alt="foto de paciente"/>
+                <div class="consultas__card__paciente__infos">
+                    <h4 class="consultas__card__paciente__infos__nome">Luciana Dias</h4>
+                    <img class="consultas__card__paciente__infos__icone" src="assets/Camera.svg" alt="icone de camera"/>
+                    <p class="consultas__card__paciente__infos__local">Consulta remota</p>
+                </div>
+                <img class="consultas__card__paciente__chat" src="assets/Chatcirculo.svg" alt="icone de chat"/>                
+            </div>
+            <p class="consultas__card__horario">14:00 - 15:00 (1 hora)</p>
+            <div class="consultas__card__botoes">
+                <button class="consultas__card__botoes__primario">Ligar por vídeo</button>
+                <button class="consultas__card__botoes__secundario">Ligar por áudio</button>
+            </div>
+        </div>        
+    </section>
+</body>
+</html>
