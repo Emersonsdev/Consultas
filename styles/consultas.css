@@ -9,6 +9,7 @@
     padding-bottom: 1.5rem;
     max-width: 1330px;
     margin: 0 auto;
+    gap: 1rem;
 }
 
 .consultas__cards__card {
