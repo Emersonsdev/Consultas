@@ -21,8 +21,16 @@
 }
 
 
-@media (max-width: 1000px) {
-    .cabecalho__menu{
-        display: none;
+@media screen and (min-width: 1440px) {
+    .cabecalho__foto {
+        width: 96px;
+    }
+
+    .cabecalho__textos__nome {
+        font-size: 2rem;
+    }
+
+    .cabecalho__textos__consultas {
+        font-size: 1.125rem;
     }
 }

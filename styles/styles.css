@@ -5,8 +5,8 @@
 :root {
     --cor-primaria: #FFB050;
     --cor-secundaria: #4894FF;
+    --cor-terciaria: #4894FF;
     --branco: #FFFFFF;
-    --preto: #101828;
     --cinza-claro: #A3A3A3;
     --cinza-escuro: #464646;
     --fonte-principal: "Montserrat", sans-serif;
@@ -21,4 +21,9 @@ body {
     padding: 1rem;
 }
 
+@media screen and (min-width: 1440px) {
+    body {
+        padding: 1.5rem;
+    }
+}
 

@@ -3,8 +3,19 @@
     font-weight: 700;
 }
 
-.consultas__card {
+.consultas__cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 1.5rem;
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+.consultas__cards__card {
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
+    width: 100%;
     border-radius: 8px;
     background-color: var(--branco);
 }
@@ -30,10 +41,15 @@
     font-size: 0.875rem;
 }
 
+.consultas__card__paciente__infos__icone {
+    padding-top: 0.25rem;
+}
+
 .consultas__card__paciente__infos__local {
     display: inline;
     color: var(--cinza-claro);
     font-size: 0.75rem;
+    margin-left: 0.5rem;
 }
 
 
@@ -68,6 +84,69 @@
     font-weight: 500;
     text-align: center;
     padding: 0.9rem 0;
+    border: 1px solid #ECECEC;
+    border-radius: 8px;
+    background-color: var(--branco);
+}
+
+.consultas__card__botoes__endereco {
+    width: 100%;
+    background-color: var(--cor-terciaria);
+    color: var(--branco);
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.9rem 0;
     border: none;
     border-radius: 8px;
+}
+
+@media screen and (min-width: 700px) {
+    .consultas__cards {
+        gap: 1rem;
+    }
+
+    .consultas__cards__card {
+        width: 44%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .consultas__cards {
+        gap: 2rem;
+    }
+
+    .consultas__cards__card {
+        width: 27%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .consultas__cards {
+        gap: 3rem;
+        margin: 3rem auto;
+    }
+
+    .consultas__cards__card {
+        width: 28%;
+    }
+
+    .consultas__card__paciente__foto {
+        width: 48px;
+        height: 48px;
+    }
+
+    .consultas__card__paciente__infos__nome {
+        font-size: 1.125rem;
+    }
+
+    .consultas__card__horario {
+        font-size: 0.875rem;
+    }
+
+    .consultas__card__botoes__secundario , .consultas__card__botoes__primario , .consultas__card__botoes__endereco {
+        font-size: 1rem;
+    }
+
+
 }
