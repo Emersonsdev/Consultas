@@ -4,19 +4,13 @@
 }
 
 .consultas__cards {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 1.5rem;
-    max-width: 1330px;
-    margin: 0 auto;
+    display: grid;
     gap: 1rem;
 }
 
 .consultas__cards__card {
-    display: flex;
-    flex-direction: column;
     padding: 1rem;
-    width: 100%;
+    width: auto;
     border-radius: 8px;
     background-color: var(--branco);
 }
@@ -104,33 +98,21 @@
 
 @media screen and (min-width: 700px) {
     .consultas__cards {
-        gap: 1rem;
-    }
-
-    .consultas__cards__card {
-        width: 44%;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {    
     .consultas__cards {
-        gap: 2rem;
-    }
-
-    .consultas__cards__card {
-        width: 27%;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {  
     .consultas__cards {
         gap: 3rem;
-        margin: 3rem auto;
-    }
-
-    .consultas__cards__card {
-        width: 28%;
-    }
+        margin: 3rem;
+    } 
 
     .consultas__card__paciente__foto {
         width: 48px;
